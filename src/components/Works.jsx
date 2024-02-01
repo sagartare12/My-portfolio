@@ -16,7 +16,7 @@ console.log(project)
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -61,7 +61,7 @@ console.log(project)
 
 const Works = () => {
   return (
-    <div className="md:px-[150px] px-[30px] py-4">
+    <div className="md:px-[130px]  py-4">
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText} `}>My work</p>
       <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -80,11 +80,18 @@ const Works = () => {
       </motion.p>
     </div>
 
-    <div className='mt-20 flex flex-wrap gap-7'>
+    {/* <div className='mt-20 ml-5 flex flex-wrap gap-7'>
       {projects.map((project) => (
         <ProjectCard key={()=>Date.now()} index={()=>Date.now()} project={project} />
       ))}
-    </div>
+    </div> */}
+    <div className='flex justify-center'>
+  <div className='mt-20 ml-5 flex flex-wrap gap-7'>
+    {projects.map((project) => (
+      <ProjectCard key={() => Date.now()} index={() => Date.now()} project={project} />
+    ))}
+  </div>
+</div>
   </div>
   )
 }

@@ -10,7 +10,7 @@ const ServiceCard = ({service,index}) => {
   console.log(service.title)
   return (
     
-  <Tilt className='xs:w-[250px] w-full' >
+  <Tilt className='xs:w-[230px] mx-auto w-full' >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -36,7 +36,7 @@ const ServiceCard = ({service,index}) => {
 
 const About = () => {
   return (
-    <div className="md:px-[150px] px-[30px]  py-8">
+    <div className="md:px-[120px] mx-[30px]  py-8">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
