@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen  mx-auto`}>
     <div
       className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
     >
@@ -22,10 +22,15 @@ const Hero = () => {
           I develop UX, user <br className='sm:block hidden' />
           interfaces and web applications
         </p>
+        <button
+            type='submit'
+            className=' mt-[60px] py-3 px-8 rounded-xl outline-none w-fit bg-[#371f6a] text-white hover:bg-white hover:text-[#371f6a] font-bold shadow-md shadow-primary'
+          >
+           Resume
+          </button>
       </div>
     </div>
 
-    <ComputersCanvas />
 
     <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
       <a href='#about'>
